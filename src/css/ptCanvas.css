@@ -1,0 +1,48 @@
+.pt-info{
+	font-size: 1.2rem;
+	text-align: center;
+}
+.pt-info h2{
+	font-size: 2rem;
+	text-shadow: 0 0 .3rem #7CFC00,0 0 .6rem #DB7093;
+}
+.ptCanvas{
+	position: absolute;
+	left: 50%;top: 50%;
+	margin-left:-400px;
+	margin-top:-200px;
+	width: 800px;
+	height: 400px;
+	border: 1px solid #000000;
+}
+.pt-info .floor{
+	position: absolute;
+	left: 50%;top: 50%;
+	margin-left:-400px;
+	margin-top:-200px;
+	width: 800px;
+	height: 400px;
+	background-color: rgba(0,0,0,.3);
+	transform: perspective(1.5rem) rotateX(5deg);
+	transform-origin: bottom;
+}
+.pt-info .bgBall{
+	position: absolute;
+	left: 50%;top: 50%;
+	margin-left:-50px;
+	margin-top:-50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,.3);
+	transform: perspective(1.5rem) translateZ(-100px);
+	transform-origin: bottom;
+	animation: randColor 5s infinite;
+}
+@keyframes randColor{
+	0%{background-color: lightcyan;}
+	20%{background-color: lightgoldenrodyellow;}
+	40%{background-color: lightpink;}
+	60%{background-color: lightcoral;}
+	100%{background-color: lightsalmon;}
+}

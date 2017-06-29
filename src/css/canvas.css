@@ -1,0 +1,60 @@
+.jiepanxia{
+	position: absolute;	
+	left: 50%;top: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;height: 80%;
+	background: hsla(0,0%,100%,.3);
+	overflow: hidden;
+}
+.jiepanxia:before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;right: 0;bottom: 0;left: 0;
+	background: url(../img/1.jpg) no-repeat center;
+	background-size : cover;
+	filter: blur(.5rem);
+	margin: -30px;
+}
+.canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background-color: #333333;
+}
+.close{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	padding: 10px;
+	text-align: center;
+	color: #333333;
+	text-shadow: 0 0 #333333;
+	background-color: white;
+	cursor: pointer;
+}
+.tan{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 200;
+	width: 8rem;
+	height: 2rem;
+	background-color: lawngreen;
+	border: 4px solid palevioletred;
+	transform: perspective(.5rem) rotateX(5deg);
+	transform-origin: bottom;
+}
+.info h2{
+	font: 2rem/1.2 "arial black";
+	filter: drop-shadow(.05rem .05rem .1rem gray);
+}
+.info p{
+	margin: 20px 0;
+	font-size: 1rem;
+	line-height: 2;
+	text-indent: 1rem;
+}
